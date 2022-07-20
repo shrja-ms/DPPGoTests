@@ -1,0 +1,11 @@
+{
+  "subscription-id": "D1186BE0-60B4-4ED6-A455-C7DB24D0D5AA",
+  "resource-id": "1234",
+  "task-id": "D1186BE0-60B4-4ED6-A455-C7DB24D0D5AA",
+  "api-version": "2022-02-01",
+  "authorization-header": "header",
+  "x-ms-correlation-request-id": "D1186BE0-60B4-4ED6-A455-C7DB24D0D5AA",
+  "content-length": "526",
+  "content-type": "json",
+  "operationId": "1"
+}

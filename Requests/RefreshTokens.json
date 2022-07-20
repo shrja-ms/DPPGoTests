@@ -1,0 +1,10 @@
+{
+  "datasourceAccessToken": {
+    "dataPlaneToken": "dataPlaneToken",
+    "mgmtPlaneToken": "mgmtPlaneToken",
+    "dataPlanePrincipalId": "dataPlanePrincipalId",
+    "mgmtPlanePrincipalId": "mgmtPlanePrincipalId",
+    "dataPlaneTokenType": "dataPlaneTokenType"
+
+  }
+}

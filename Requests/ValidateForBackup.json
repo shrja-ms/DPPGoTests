@@ -1,0 +1,80 @@
+{
+  "jobLibraryInitializationParams": "jobLibInitParams",
+  "datasourceAccessToken": {
+    "dataPlaneToken": "dataplaneToken",
+    "mgmtPlaneToken": "mgmtPlaneToken",
+    "dataPlanePrincipalId": "dataplanePrincipalId",
+    "mgmtPlanePrincipalId": "mgmtplanePrincipalId",
+    "dataPlaneTokenType": "dataplaneToken"
+  },
+  "additionalProperties": {
+    "additionalProp1": "additionalProp1"
+  },
+  "datasourceSet": {
+    "resourceID": "/subscriptions/f75d8d8b-6735-4697-82e1-1a7a3ff0d5d4/resourceGroups/viveksipgtest/providers/Microsoft.DBforPostgreSQL/servers/viveksipgtest",
+    "resourceUri": null,
+    "resourceName": "viveksipgtest",
+    "resourceType": "Microsoft.DBforPostgreSQL/servers",
+    "resourceLocation": "westus",
+    "datasourceType": "vm",
+    "objectType": "DatasourceSet",
+    "baseUri": "string",
+    "resourceProperties": {
+      "objectType": "BaseResourceProperties"
+    }
+  },
+  "datasource": {
+    "resourceID": "/subscriptions/f75d8d8b-6735-4697-82e1-1a7a3ff0d5d4/resourceGroups/viveksipgtest/providers/Microsoft.DBforPostgreSQL/servers/viveksipgtest/databases/testdb",
+    "resourceUri": null,
+    "resourceName": "testdb",
+    "resourceType": "Microsoft.DBforPostgreSQL/servers/databases",
+    "resourceLocation": "westus",
+    "resourceProperties": {
+      "objectType": "BaseResourceProperties"
+    },
+    "datasourceType": "vm",
+    "objectType": "Datasource",
+    "baseUri": "string"
+  },
+  "rPCatalogInitializeParams": {
+    "BaseUrl": "https://sea-bvtd2-pitc1-t56tl.ext.trafficmanager.net",
+    "BackupItemId": "038b6a91-d592-46c2-b3b6-34b010a35f23",
+    "RecoveryPointId": "f5afa40b-1ec7-4170-87a5-0c5670790d64",
+    "Token": "",
+    "VaultId": "9b8fed2e-cc96-4224-aafc-35793516d8c1"
+  },
+  "datastoreInitializeParams": {
+    "BackupItemId": "038b6a91-d592-46c2-b3b6-34b010a35f23",
+    "RecoveryPointId": "f5afa40b-1ec7-4170-87a5-0c5670790d64",
+    "Token": "",
+    "DataStoreInfo": "{\"dataStoreName\":\"BackupVaultDataStore\",\"dataStoreId\":\"d0004bda-ca63-4c82-8cae-cd966f4d88b1\",\"dataStoreURL\":\"https://sea-bvtd2-prot1-t56tl.ext.trafficmanager.net/restapi/vaultstore/authissuers/dmsi-sea-bvtd2-manag1\",\"storageTypeFlags\":\"LRS_Hot,RAGRS_Hot\",\"authorizationTypeFlags\":\"Dsts\",\"objectType\":\"DataStoreInfo\",\"dataStoreType\":\"VaultStore\"}"
+  },
+  "backupParameters": {
+    "retentionTag": {
+      "tagName": "Daily"
+    },
+    "backupType": "Full",
+    "objectType": "AzureBackupParamsForPlugin",
+    "triggerType": "Adhoc",
+    "policyInfo": {
+      "policyName": "DailyFull",
+      "policyVersion": "string"
+    },
+    "policyParameters": {
+      "dataStoreParametersList": [
+        {
+          "objectType": "DataStoreParameters",
+          "dataStoreType": "OperationalStore"
+        }
+      ],
+      "backupDatasourceParametersList": [
+        {
+          "objectType": "BackupDatasourceParameters"
+        }
+      ]
+    },
+    "autoHealSettings": {
+      "autoHealStatus": "Off"
+    }
+  }
+}

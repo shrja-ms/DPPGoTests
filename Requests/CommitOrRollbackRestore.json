@@ -1,0 +1,78 @@
+{
+  "jobLibraryInitializationParams": "string",
+  "datasourceAccessToken": {
+    "dataPlaneToken": "dataPlaneToken",
+    "mgmtPlaneToken": "mgmtPlaneToken",
+    "dataPlanePrincipalId": "dataPlanePrincipalId",
+    "mgmtPlanePrincipalId": "mgmtPlanePrincipalId",
+    "dataPlaneTokenType": "dataPlaneTokenType"
+  },
+  "restoreType": "OriginalLocationRecovery",
+  "sourceDatasourceSet": {
+    "resourceID": "/subscriptions/4b41626c-70b9-4b5f-b475-b811f29e0520/resourceGroups/pujgupta-avs-test/providers/Microsoft.ConnectedVMwarevSphere/VCenters/testVcenter9",
+    "resourceUri": "",
+    "baseUri": null,
+    "datasourceType": "Microsoft.ConnectedVMwarevSphere/VirtualMachines",
+    "resourceName": "testVcenter9",
+    "resourceType": "Microsoft.ConnectedVMwarevSphere/VCenters",
+    "resourceLocation": "eastus2euap",
+    "resourceProperties": null,
+    "objectType": "DatasourceSet"
+  },
+  "sourceDatasource": {
+    "resourceID": "/subscriptions/4b41626c-70b9-4b5f-b475-b811f29e0520/resourceGroups/pujgupta-avs-test/providers/Microsoft.ConnectedVMwarevSphere/VirtualMachines/vm6",
+    "resourceUri": "",
+    "baseUri": null,
+    "datasourceType": "Microsoft.ConnectedVMwarevSphere/VirtualMachines",
+    "resourceName": "vm6",
+    "resourceType": "Microsoft.ConnectedVMwarevSphere/VirtualMachines",
+    "resourceLocation": "East US",
+    "resourceProperties": {
+      "objectType": "BaseResourceProperties"
+    },
+    "objectType": "Datasource"
+  },
+  "targetDatasourceSet": {
+    "objectType": "DatasourceSet",
+    "resourceID": "/subscriptions/4b41626c-70b9-4b5f-b475-b811f29e0520/resourceGroups/pujgupta-avs-test/providers/Microsoft.ConnectedVMwarevSphere/VCenters/testVcenter9",
+    "resourceName": "testVcenter9",
+    "resourceType": "Microsoft.ConnectedVMwarevSphere/VCenters",
+    "resourceUri": "",
+    "resourceLocation": "eastus2euap",
+    "datasourceType": "Microsoft.ConnectedVMwarevSphere/VirtualMachines",
+    "baseUri": null,
+    "resourceProperties": null
+  },
+  "targetDatasource": {
+    "objectType": "Datasource",
+    "resourceID": "/subscriptions/4b41626c-70b9-4b5f-b475-b811f29e0520/resourceGroups/pujgupta-avs-test/providers/Microsoft.ConnectedVMwarevSphere/VirtualMachines/vm6",
+    "resourceName": "vm6",
+    "resourceType": "Microsoft.ConnectedVMwarevSphere/VirtualMachines",
+    "resourceUri": "",
+    "resourceLocation": "eastus2euap",
+    "datasourceType": "Microsoft.ConnectedVMwarevSphere/VirtualMachines",
+    "resourceProperties": {
+      "objectType": "BaseResourceProperties"
+    },
+    "baseUri": null
+  },
+  "restoreToRPId": "string",
+  "restoreToPointInTime": "string",
+  "rPCatalogInitializeParams": {
+    "BaseUrl": "https://sea-bvtd-pitc1-b6vas-ext.trafficmanager.net",
+    "BackupItemId": "fe16bf70-0f01-46b5-943a-430e9a3606a8",
+    "RecoveryPointId": "2355d988-66b0-4d7c-bb7a-8df4da484923",
+    "Token": "",
+    "VaultId": "7758142a9c7748c4b3aa2fea70526af8",
+    "DataStoreInfo": "{\r\n  \"dataStoreName\": \"BackupVaultDataStore\",\r\n  \"dataStoreId\": \"14038d36d4c84bfabea640b4171431e9\",\r\n  \"dataStoreURL\": \"https://sea-bvtd2-prot1b-t56tl.ext.trafficmanager.net/restapi/vaultstore/authissuers/dmsi-sea-bvtd-manag1\",\r\n  \"storageTypeFlags\": \"LRS_Hot,RAGRS_Hot\",\r\n  \"authorizationTypeFlags\": \"Dsts\",\r\n  \"objectType\": \"DataStoreInfo\",\r\n  \"dataStoreType\": \"VaultStore\"\r\n}"
+  },
+  "datastoreInitializeParams": {
+    "BackupItemId": "fe16bf70-0f01-46b5-943a-430e9a3606a8",
+    "RecoveryPointId": "2355d988-66b0-4d7c-bb7a-8df4da484923",
+    "BaseUrl": "https://sea-bvtd2-prot1b-t56tl.ext.trafficmanager.net/restapi/vaultstore/authissuers/dmsi-sea-bvtd-manag1",
+    "Token": "",
+    "DataStoreInfo": "{\r\n  \"dataStoreName\": \"BackupVaultDataStore\",\r\n  \"dataStoreId\": \"14038d36d4c84bfabea640b4171431e9\",\r\n  \"dataStoreURL\": \"https://sea-bvtd2-prot1b-t56tl.ext.trafficmanager.net/restapi/vaultstore/authissuers/dmsi-sea-bvtd-manag1\",\r\n  \"storageTypeFlags\": \"LRS_Hot,RAGRS_Hot\",\r\n  \"authorizationTypeFlags\": \"Dsts\",\r\n  \"objectType\": \"DataStoreInfo\",\r\n  \"dataStoreType\": \"VaultStore\"\r\n}"
+  },
+  "forceOverwrite": false,
+  "loopBackContext": "loopbackContext"
+}
