@@ -8,7 +8,6 @@
     "mgmtPlanePrincipalId": "mgmtPlanePrincipalId",
     "dataPlaneTokenType": "dataPlaneTokenType"
   },
-  "restoreType": "OriginalLocationRecovery",
   "sourceDatasourceSet": {
     "resourceID": "/subscriptions/4b41626c-70b9-4b5f-b475-b811f29e0520/resourceGroups/pujgupta-avs-test/providers/Microsoft.ConnectedVMwarevSphere/VCenters/testVcenter9",
     "resourceUri": "",
