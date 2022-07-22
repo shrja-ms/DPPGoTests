@@ -6,13 +6,13 @@ import (
 	"reflect"
 	"testing"
 
-	generated "github.com/shrja-ms/TestGoSample"
+	dataprotectiondatasourceplugin "github.com/azure/DataProtectionPlatformGoPluginSDK"
 )
 
 func TestBackupRequest(t *testing.T) {
 	//Reading the input to plugin
 	testFile1, err := ioutil.ReadFile("./Requests/Backup.json")
-	backuprequest := generated.BackupRequest{}
+	backuprequest := dataprotectiondatasourceplugin.BackupRequest{}
 
 	//Deserializing using contract in the SDK
 	err = json.Unmarshal([]byte(testFile1), &backuprequest)
@@ -27,7 +27,7 @@ func TestBackupRequest(t *testing.T) {
 	backuprequeststring, err2 := json.Marshal(backuprequest)
 
 	// Deserializing again to recreate the backuprequest.
-	backuprequestRegenerated := generated.BackupRequest{}
+	backuprequestRegenerated := dataprotectiondatasourceplugin.BackupRequest{}
 	err3 := json.Unmarshal([]byte(backuprequeststring), &backuprequestRegenerated)
 
 	//Verify both the Incoming Backup Request and regenerated BackupRequest are same.
@@ -39,7 +39,7 @@ func TestBackupRequest(t *testing.T) {
 func TestValidateForBackupRequest(t *testing.T) {
 	//Reading the input to plugin
 	testFile1, err := ioutil.ReadFile("./Requests/ValidateForBackup.json")
-	validateforbackuprequest := generated.ValidateForBackupRequest{}
+	validateforbackuprequest := dataprotectiondatasourceplugin.ValidateForBackupRequest{}
 
 	//Deserializing using contract in the SDK
 	err = json.Unmarshal([]byte(testFile1), &validateforbackuprequest)
@@ -54,7 +54,7 @@ func TestValidateForBackupRequest(t *testing.T) {
 	validateforbackuprequeststring, err2 := json.Marshal(validateforbackuprequest)
 
 	// Deserializing again to recreate the backuprequest.
-	validateforbackuprequestRegenerated := generated.ValidateForBackupRequest{}
+	validateforbackuprequestRegenerated := dataprotectiondatasourceplugin.ValidateForBackupRequest{}
 	err3 := json.Unmarshal([]byte(validateforbackuprequeststring), &validateforbackuprequestRegenerated)
 
 	//Verify both the Incoming Backup Request and regenerated BackupRequest are same.
@@ -66,7 +66,7 @@ func TestValidateForBackupRequest(t *testing.T) {
 func TestCommitOrRollbackBackupRequest(t *testing.T) {
 	//Reading the input to plugin
 	testFile1, err := ioutil.ReadFile("./Requests/CommitOrRollbackBackup.json")
-	commitorrollbackbackuprequest := generated.CommitOrRollbackBackupRequest{}
+	commitorrollbackbackuprequest := dataprotectiondatasourceplugin.CommitOrRollbackBackupRequest{}
 
 	//Deserializing using contract in the SDK
 	err = json.Unmarshal([]byte(testFile1), &commitorrollbackbackuprequest)
@@ -81,7 +81,7 @@ func TestCommitOrRollbackBackupRequest(t *testing.T) {
 	commitorrollbackbackuprequeststring, err2 := json.Marshal(commitorrollbackbackuprequest)
 
 	// Deserializing again to recreate the backuprequest.
-	commitorrollbackbackuprequestRegenerated := generated.CommitOrRollbackBackupRequest{}
+	commitorrollbackbackuprequestRegenerated := dataprotectiondatasourceplugin.CommitOrRollbackBackupRequest{}
 	err3 := json.Unmarshal([]byte(commitorrollbackbackuprequeststring), &commitorrollbackbackuprequestRegenerated)
 
 	//Verify both the Incoming Backup Request and regenerated BackupRequest are same.
@@ -93,7 +93,7 @@ func TestCommitOrRollbackBackupRequest(t *testing.T) {
 func TestRestoreRequest(t *testing.T) {
 	//Reading the input to plugin
 	testFile1, err := ioutil.ReadFile("./Requests/Restore.json")
-	restorerequest := generated.RestoreRequest{}
+	restorerequest := dataprotectiondatasourceplugin.RestoreRequest{}
 
 	//Deserializing using contract in the SDK
 	err = json.Unmarshal([]byte(testFile1), &restorerequest)
@@ -108,7 +108,7 @@ func TestRestoreRequest(t *testing.T) {
 	restorerequeststring, err2 := json.Marshal(restorerequest)
 
 	// Deserializing again to recreate the restorerequest.
-	restorerequestRegenerated := generated.RestoreRequest{}
+	restorerequestRegenerated := dataprotectiondatasourceplugin.RestoreRequest{}
 	err3 := json.Unmarshal([]byte(restorerequeststring), &restorerequestRegenerated)
 
 	//Verify both the Incoming Restore Request and regenerated RestoreRequest are same.
@@ -120,7 +120,7 @@ func TestRestoreRequest(t *testing.T) {
 func TestValidateForRestoreRequest(t *testing.T) {
 	//Reading the input to plugin
 	testFile1, err := ioutil.ReadFile("./Requests/ValidateForRestore.json")
-	validateforrestorerequest := generated.ValidateForRestoreRequest{}
+	validateforrestorerequest := dataprotectiondatasourceplugin.ValidateForRestoreRequest{}
 
 	//Deserializing using contract in the SDK
 	err = json.Unmarshal([]byte(testFile1), &validateforrestorerequest)
@@ -135,7 +135,7 @@ func TestValidateForRestoreRequest(t *testing.T) {
 	validateforrestorerequeststring, err2 := json.Marshal(validateforrestorerequest)
 
 	// Deserializing again to recreate the restorerequest.
-	validateforrestorerequestRegenerated := generated.ValidateForRestoreRequest{}
+	validateforrestorerequestRegenerated := dataprotectiondatasourceplugin.ValidateForRestoreRequest{}
 	err3 := json.Unmarshal([]byte(validateforrestorerequeststring), &validateforrestorerequestRegenerated)
 
 	//Verify both the Incoming Restore Request and regenerated RestoreRequest are same.
@@ -147,7 +147,7 @@ func TestValidateForRestoreRequest(t *testing.T) {
 func TestCommitOrRollbackRestoreRequest(t *testing.T) {
 	//Reading the input to plugin
 	testFile1, err := ioutil.ReadFile("./Requests/CommitOrRollbackRestore.json")
-	commitorrollbackrestorerequest := generated.CommitOrRollbackRestoreRequest{}
+	commitorrollbackrestorerequest := dataprotectiondatasourceplugin.CommitOrRollbackRestoreRequest{}
 
 	//Deserializing using contract in the SDK
 	err = json.Unmarshal([]byte(testFile1), &commitorrollbackrestorerequest)
@@ -162,7 +162,7 @@ func TestCommitOrRollbackRestoreRequest(t *testing.T) {
 	commitorrollbackrestorerequeststring, err2 := json.Marshal(commitorrollbackrestorerequest)
 
 	// Deserializing again to recreate the restorerequest.
-	commitorrollbackrestorerequestRegenerated := generated.CommitOrRollbackRestoreRequest{}
+	commitorrollbackrestorerequestRegenerated := dataprotectiondatasourceplugin.CommitOrRollbackRestoreRequest{}
 	err3 := json.Unmarshal([]byte(commitorrollbackrestorerequeststring), &commitorrollbackrestorerequestRegenerated)
 
 	//Verify both the Incoming Restore Request and regenerated RestoreRequest are same.
@@ -174,7 +174,7 @@ func TestCommitOrRollbackRestoreRequest(t *testing.T) {
 func TestStartProtectionRequest(t *testing.T) {
 	//Reading the input to plugin
 	testFile1, err := ioutil.ReadFile("./Requests/StartProtection.json")
-	startprotectionrequest := generated.StartProtectionRequest{}
+	startprotectionrequest := dataprotectiondatasourceplugin.StartProtectionRequest{}
 
 	//Deserializing using contract in the SDK
 	err = json.Unmarshal([]byte(testFile1), &startprotectionrequest)
@@ -189,7 +189,7 @@ func TestStartProtectionRequest(t *testing.T) {
 	startprotectionrequeststring, err2 := json.Marshal(startprotectionrequest)
 
 	// Deserializing again to recreate the startprotectionrequest.
-	startprotectionrequestRegenerated := generated.StartProtectionRequest{}
+	startprotectionrequestRegenerated := dataprotectiondatasourceplugin.StartProtectionRequest{}
 	err3 := json.Unmarshal([]byte(startprotectionrequeststring), &startprotectionrequestRegenerated)
 
 	//Verify both the Incoming StartProtection Request and regenerated StartProtectionRequest are same.
@@ -201,7 +201,7 @@ func TestStartProtectionRequest(t *testing.T) {
 func TestValidateForProtectionRequest(t *testing.T) {
 	//Reading the input to plugin
 	testFile1, err := ioutil.ReadFile("./Requests/ValidateForProtection.json")
-	validateforprotectionrequest := generated.ValidateForProtectionRequest{}
+	validateforprotectionrequest := dataprotectiondatasourceplugin.ValidateForProtectionRequest{}
 
 	//Deserializing using contract in the SDK
 	err = json.Unmarshal([]byte(testFile1), &validateforprotectionrequest)
@@ -216,7 +216,7 @@ func TestValidateForProtectionRequest(t *testing.T) {
 	validateforprotectionrequeststring, err2 := json.Marshal(validateforprotectionrequest)
 
 	// Deserializing again to recreate the startprotectionrequest.
-	validateforprotectionrequestRegenerated := generated.ValidateForProtectionRequest{}
+	validateforprotectionrequestRegenerated := dataprotectiondatasourceplugin.ValidateForProtectionRequest{}
 	err3 := json.Unmarshal([]byte(validateforprotectionrequeststring), &validateforprotectionrequestRegenerated)
 
 	//Verify both the Incoming StartProtection Request and regenerated StartProtectionRequest are same.
@@ -228,7 +228,7 @@ func TestValidateForProtectionRequest(t *testing.T) {
 func TestStopProtectionRequest(t *testing.T) {
 	//Reading the input to plugin
 	testFile1, err := ioutil.ReadFile("./Requests/StopProtection.json")
-	stopprotectionrequest := generated.StopProtectionRequest{}
+	stopprotectionrequest := dataprotectiondatasourceplugin.StopProtectionRequest{}
 
 	//Deserializing using contract in the SDK
 	err = json.Unmarshal([]byte(testFile1), &stopprotectionrequest)
@@ -243,7 +243,7 @@ func TestStopProtectionRequest(t *testing.T) {
 	stopprotectionrequeststring, err2 := json.Marshal(stopprotectionrequest)
 
 	// Deserializing again to recreate the startprotectionrequest.
-	stopprotectionrequestRegenerated := generated.StopProtectionRequest{}
+	stopprotectionrequestRegenerated := dataprotectiondatasourceplugin.StopProtectionRequest{}
 	err3 := json.Unmarshal([]byte(stopprotectionrequeststring), &stopprotectionrequestRegenerated)
 
 	//Verify both the Incoming StartProtection Request and regenerated StartProtectionRequest are same.
