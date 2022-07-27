@@ -20,7 +20,8 @@
     "objectType": "DatasourceSet",
     "baseUri": "string",
     "resourceProperties": {
-      "objectType": "BaseResourceProperties"
+      "objectType": "VmwareVMProperties",
+      "instanceUUID": "1234"
     }
   },
   "datasource": {
@@ -29,8 +30,9 @@
     "resourceName": "testdb",
     "resourceType": "Microsoft.DBforPostgreSQL/servers/databases",
     "resourceLocation": "westus",
-    "resourceProperties": {
-      "objectType": "BaseResourceProperties"
+    "resourceProperties":  {
+      "objectType": "VmwareVMProperties",
+      "instanceUUID": "1234"
     },
     "datasourceType": "vm",
     "objectType": "Datasource",

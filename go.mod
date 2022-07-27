@@ -2,7 +2,7 @@ module github.com/shrja/DPPGoTests
 
 go 1.18
 
-require github.com/azure/DataProtectionPlatformGoPluginSDK v1.0.3
+require github.com/azure/DataProtectionPlatformGoPluginSDK v1.0.4
 
 require github.com/davecgh/go-spew v1.1.1 // indirect
 

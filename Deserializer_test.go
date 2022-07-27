@@ -2,9 +2,10 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"io/ioutil"
 	"reflect"
-	"testing"
+		"testing"
 
 	dataprotectiondatasourceplugin "github.com/azure/DataProtectionPlatformGoPluginSDK"
 )
@@ -26,6 +27,7 @@ func TestBackupRequest(t *testing.T) {
 	//Stringify the BackupRequest to verify same object got created
 	backuprequeststring, err2 := json.Marshal(backuprequest)
 
+	fmt.Println(string([]byte(backuprequeststring)))
 	// Deserializing again to recreate the backuprequest.
 	backuprequestRegenerated := dataprotectiondatasourceplugin.BackupRequest{}
 	err3 := json.Unmarshal([]byte(backuprequeststring), &backuprequestRegenerated)

@@ -2,8 +2,8 @@ github.com/Azure/azure-sdk-for-go/sdk/azcore v1.1.1 h1:tz19qLF65vuu2ibfTqGVJxG/z
 github.com/Azure/azure-sdk-for-go/sdk/azcore v1.1.1/go.mod h1:uGG2W01BaETf0Ozp+QxxKJdMBNRWPdstHG0Fmdwn1/U=
 github.com/Azure/azure-sdk-for-go/sdk/internal v1.0.0 h1:jp0dGvZ7ZK0mgqnTSClMxa5xuRL7NZgHameVYF6BurY=
 github.com/Azure/azure-sdk-for-go/sdk/internal v1.0.0/go.mod h1:eWRD7oawr1Mu1sLCawqVc0CUiF43ia3qQMxLscsKQ9w=
-github.com/azure/DataProtectionPlatformGoPluginSDK v1.0.3 h1:GLCA+XuoMz4Km6YQe16emmgxLiO7idrXp0r7v1OHBro=
-github.com/azure/DataProtectionPlatformGoPluginSDK v1.0.3/go.mod h1:8UcbNM04WChgNly7QfLjSPH2vHtaNULt6cAL7FUUR8U=
+github.com/azure/DataProtectionPlatformGoPluginSDK v1.0.4 h1:p8v0080ypha04ZRkNmT5RiVUk5/oF5oPodNcMRoMqMI=
+github.com/azure/DataProtectionPlatformGoPluginSDK v1.0.4/go.mod h1:8UcbNM04WChgNly7QfLjSPH2vHtaNULt6cAL7FUUR8U=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
